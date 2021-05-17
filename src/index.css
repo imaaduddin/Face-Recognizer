@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* Got the linear color gradient below from https://cssgradient.io/ */
+  background: rgb(14,108,130);
+  background: linear-gradient(90deg, rgba(14,108,130,1) 0%, rgba(224,124,165,1) 35%, rgba(255,196,0,1) 99%);
 }
 
 code {
