@@ -1,3 +1,6 @@
+An app that can detect faces using React.js. I am following a tuturial for this to practice and learn React.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
