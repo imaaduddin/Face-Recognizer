@@ -6,8 +6,8 @@ function App() {
   return (
     <div className="App">
       <Navigation />
-      {/* <Logo />
-      <ImageLinkForm />
+      <Logo />
+      {/* <ImageLinkForm />
       <FaceRecognition /> */}
     </div>
   );
