@@ -1,4 +1,4 @@
-An app that can detect faces using React.js. I am following a tuturial for this to practice and learn React.
+An app that can detect faces using React.js. I am following a tutorial for this to practice and learn React.
 
 
 # Getting Started with Create React App
