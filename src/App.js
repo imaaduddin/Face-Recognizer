@@ -1,3 +1,4 @@
+import React, { Component } from 'react';
 import "./App.css";
 import Navigation from "./Components/Navigation/Navigation"
 import Logo from "./Components/Logo/Logo";
@@ -9,7 +10,7 @@ import Particles from 'react-particles-js';
 const particlesOptions = {
   particles: {
     number: {
-      value: 40,
+      value: 70,
       density: {
         enable: true,
         value_area: 800
@@ -22,19 +23,33 @@ const particlesOptions = {
     }
   }
 }
-function App() {
-  return (
-    <div className="App">
-      <Particles className="particles"
-        params={particlesOptions} 
-      />
-      <Navigation />
-      <Logo />
-      <Rank />
-      <ImageLinkForm />
-      {/* <FaceRecognition /> */}
-    </div>
-  );
+
+class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      input: "",
+    }
+  }
+
+  onInputChange = (event) => {
+    console.log(event.target.value);
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <Particles className="particles"
+          params={particlesOptions} 
+        />
+        <Navigation />
+        <Logo />
+        <Rank />
+        <ImageLinkForm onInputChange={this.onInputChange} />
+        {/* <FaceRecognition /> */}
+      </div>
+    );
+  }
 }
 
 export default App;
