@@ -5,6 +5,10 @@ import Logo from "./Components/Logo/Logo";
 import ImageLinkForm from "./Components/ImageLinkForm/ImageLinkForm";
 import Rank from "./Components/Rank/Rank";
 import Particles from 'react-particles-js';
+import Clarifai from "clarifai";
+
+// got from https://docs.clarifai.com/clarifai-basics/authentication/authorize
+const app = new Clarifai.App({apiKey: 'c5bad98c05e1426f8f6629cd3768b20f'});
 
 // Got below code from: https://www.npmjs.com/package/react-particles-js
 const particlesOptions = {
